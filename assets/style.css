@@ -1,0 +1,36 @@
+.card-carousel{
+    background-color: rgb(240, 160, 212);
+    height: 20vh;
+
+}
+.card-carousel h1{
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    color: rgb(245, 236, 236);
+}
+
+.filtro{
+    margin-top: 5px;
+}
+.card-carousel-1{
+    background-color: rgb(179, 125, 160);
+    height: 20vh;
+}
+.fab img{
+    height: 5vh !important;
+}
+.row{
+    margin: 10px;
+}
+form{
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-left: 20vh; 
+    margin-right: 20vh;
+}
+table{
+    margin:10vh;
+}
+
+.card{ margin:5vh}
