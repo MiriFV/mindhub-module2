@@ -9,9 +9,7 @@ let Tarjetas = ''
 
 function filtroCategorias(valor) {
     let Categorias = document.querySelectorAll('.check-value')
-    let elements = document.querySelectorAll(".card");
 
-    elements.forEach((element) => {
         Categorias.forEach((categoria)=>{
             if (element!=categoria){
 

@@ -22,13 +22,13 @@ function crearCard(eventos,currentDate)
                       <div class="card-footer row row-cols-2">`
       if(evento.date>currentDate){
         coleccionEventos += `<div class="col"><small class="text-muted">Price: $${evento.price}</small></div>
-                      <div class="col"><a href="./details.html"><button class="btn btn-outline-light btn-dark" type="submit">Ver mas</button></a></div>
+                      <div class="col"><a href="./details.html?id=${evento._id}" class="card-link"><button class="btn btn-outline-light btn-dark" type="submit">Details</button></a></div>
                       </div>
                       </div>
                       </div>`
       }else{
         coleccionEventos +=`<div class="col"><small class="text-muted">Asistence: ${evento.assistance}</small></div>
-                      <div class="col"><a href="./details.html"><button class="btn btn-outline-light btn-dark" type="submit">Ver mas</button></a></div>
+                      <div class="col"><a href="./details.html?id=${evento._id}" class="card-link"><button class="btn btn-outline-light btn-dark" type="submit">Details</button></a></div>
                       </div>
                       </div>
                       </div>`
