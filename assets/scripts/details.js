@@ -1,0 +1,4 @@
+const queryString = location.search // 
+
+
+

@@ -7,11 +7,9 @@ const events = data.events;
 
 let Tarjetas = ''
 
-
-
-
 function crearCard(eventos,currentDate)
-  {   let coleccionEventos=''
+  {   
+    let coleccionEventos=''
       for(const evento of eventos){
       coleccionEventos += `<div class="col ">
                       <div class="card h-100 " style="height:30rem">
@@ -44,7 +42,20 @@ function crearCard(eventos,currentDate)
 Tarjetas = crearCard(events,currentDate);
 contenedor.innerHTML=Tarjetas;
 
+//Buscar escribiendo por titulo o categoria
+let botonBuscar= document.getElementById("botonBuscar")
+let buscador = document.getElementById("buscador")
+let formWrite = document.getElementById("formWrite")
 
+formWrite.addEventListener("submit",(buscar)=>{
+  buscar.preventDefault()
+})
+botonBuscar.addEventListener("click" ,()=>{
+    let CardFiltradas = events.filter((evento)=> evento.name.toLowerCase().includes(buscador.value.toLowerCase()) || evento.category.toLowerCase().includes(buscador.value.toLowerCase()))
+    Tarjetas = crearCard(CardFiltradas,currentDate);
+    contenedor.innerHTML=Tarjetas;
+
+}) 
 
 
 
